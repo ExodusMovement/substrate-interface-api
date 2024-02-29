@@ -24,7 +24,7 @@ from scalecodec.updater import update_type_registries
 
 from app.middleware import CatchAllMiddleware
 from app.middleware.context import ContextMiddleware
-from app.settings import DOGPILE_CACHE_SETTINGS
+# from app.settings import DOGPILE_CACHE_SETTINGS
 from app.resources import jsonrpc
 
 # Gracefully update type registries in Scale codec
@@ -37,9 +37,9 @@ except Exception:
 cache_region = make_region().configure(
     'dogpile.cache.redis',
     arguments={
-        'host': DOGPILE_CACHE_SETTINGS['host'],
-        'port': DOGPILE_CACHE_SETTINGS['port'],
-        'db': DOGPILE_CACHE_SETTINGS['db'],
+#         'host': DOGPILE_CACHE_SETTINGS['host'],
+#         'port': DOGPILE_CACHE_SETTINGS['port'],
+#         'db': DOGPILE_CACHE_SETTINGS['db'],
         'distributed_lock': True
     }
 )

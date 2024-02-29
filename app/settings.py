@@ -26,11 +26,11 @@ SUBSTRATE_NETWORK_NAME = os.environ.get("SUBSTRATE_NETWORK_NAME", 'substrate')
 TYPE_REGISTRY = os.environ.get("TYPE_REGISTRY", "default")
 TYPE_REGISTRY_FILE = os.environ.get("TYPE_REGISTRY_FILE")
 
-DOGPILE_CACHE_SETTINGS = {
-    'host': os.environ.get("DOGPILE_CACHE_HOST", "redis"),
-    'port': os.environ.get("DOGPILE_CACHE_PORT", 6379),
-    'db': os.environ.get("DOGPILE_CACHE_DB", 1)
-}
+# DOGPILE_CACHE_SETTINGS = {
+#     'host': os.environ.get("DOGPILE_CACHE_HOST", "redis"),
+#     'port': os.environ.get("DOGPILE_CACHE_PORT", 6379),
+#     'db': os.environ.get("DOGPILE_CACHE_DB", 1)
+# }
 
 DEBUG = False
 
